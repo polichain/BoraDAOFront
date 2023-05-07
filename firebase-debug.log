@@ -1,0 +1,19 @@
+[debug] [2023-05-07T11:54:43.329Z] ----------------------------------------------------------------------
+[debug] [2023-05-07T11:54:43.330Z] Command:       /usr/local/bin/node /usr/bin/firebase deploy
+[debug] [2023-05-07T11:54:43.331Z] CLI Version:   11.29.1
+[debug] [2023-05-07T11:54:43.331Z] Platform:      linux
+[debug] [2023-05-07T11:54:43.331Z] Node Version:  v16.20.0
+[debug] [2023-05-07T11:54:43.331Z] Time:          Sun May 07 2023 08:54:43 GMT-0300 (Brasilia Standard Time)
+[debug] [2023-05-07T11:54:43.331Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-07T11:54:43.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-07T11:54:43.388Z] > authorizing via signed-in user (otavio.vac@gmail.com)
+[debug] [2023-05-07T11:54:43.388Z] [iam] checking project intelli-2873a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-07T11:54:43.390Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/intelli-2873a:testIamPermissions [none]
+[debug] [2023-05-07T11:54:43.390Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/intelli-2873a:testIamPermissions x-goog-quota-user=projects/intelli-2873a
+[debug] [2023-05-07T11:54:43.390Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/intelli-2873a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-07T11:54:44.364Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/intelli-2873a:testIamPermissions 200
+[debug] [2023-05-07T11:54:44.365Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/intelli-2873a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-07T11:54:44.369Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/intelli-2873a [none]
+[debug] [2023-05-07T11:54:44.789Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/intelli-2873a 200
+[debug] [2023-05-07T11:54:44.790Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/intelli-2873a {"projectId":"intelli-2873a","projectNumber":"588830632753","displayName":"intelli-hackathon","name":"projects/intelli-2873a","resources":{"hostingSite":"intelli-2873a"},"state":"ACTIVE","etag":"1_5f2fb3ed-2c77-42c0-b631-4453a7fb14be"}

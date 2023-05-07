@@ -1,0 +1,442 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li span:hover {
+  color: #ccc;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* Poll Card */
+
+.poll-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.poll-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.poll-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.poll-card h1 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+.poll-card h2 {
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.poll-card b {
+  color: #333;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.poll-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+.poll-card .vote-count {
+  color: #999;
+  font-size: 1rem;
+}
+
+.poll-card button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.poll-card button:hover {
+  background-color: #666;
+}
+
+
+
+/* Wallet Cards */
+.wallet-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wallet-card {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 350px;
+}
+
+.wallet-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.wallet-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+.wallet-card label {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.wallet-card p:last-child {
+  margin-bottom: 0;
+}
+
+.wallet-card label:last-child {
+  margin-bottom: 0;
+}
+
+/* Staking Cards */
+.staking-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.staking-card {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 350px;
+}
+
+.staking-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.staking-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.staking-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Poll Page */
+
+.poll-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 2rem; /* Add top padding */
+  background-color: #f4f4f4;
+}
+
+.poll {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.poll h1 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.poll p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lastVoters {
+  margin-top: 1rem;
+}
+
+.lastVoters h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.lastVoters ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lastVoters li {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Poll Create */
+
+.poll-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.poll-create h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.poll-create form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.poll-create button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.poll-create button:hover {
+  transform: translateY(-5px);
+}
+
+
+button.light{
+  display: inline-block;
+  outline: 0;
+  appearance: none;
+  padding: 12px 12px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(9, 128, 76);
+  box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  transition: all 150ms ease-in-out 0s;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  :hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(17, 97, 73);
+      box-shadow: rgb(19 170 82 / 40%) 0px 2px 3px, rgb(195 231 202) 0px 0px 0px 3px;
+  }
+
+}
+
+input {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid rgb(137, 151, 155);
+  transition: border-color 150ms ease-in-out 0s;
+  outline: none;
+  color: rgb(33, 49, 60);
+  background-color: rgb(255, 255, 255);
+  padding-right: 12px;
+  :hover{
+      box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+  }
+}
+
+.crypto-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.crypto-card h2 {
+  margin-bottom: 1rem;
+}
+
+.crypto-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.crypto-card li {
+  margin-bottom: 0.5rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.App-features {
+  max-width: 300px;
+  text-align: left;
+  margin: 1rem;
+}
+
+.App-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.App-intro,
+.App-features {
+  padding: 2rem;
+  text-align: left;
+}
+
+.App-intro p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.App-features h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.App-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App-features li {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
